@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+:root {
+
+    --cor1: #737272;
+    --cor2: #163e7370;
+    --cor3: #011526;
+    --cor4: #184D59;
+    --cor5: #86A3A6;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--cor4), var(--cor5));
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+header {
+    background-color: var(--cor2);
+}
+
+
+header h1 {
+    text-align: center;
+    padding: 15px;
+    color: white;
+
+}
+
+section {
+    margin: auto;
+    max-width: 500px;
+}
+
+
+#iTema {
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: var(--cor1);
+    box-shadow:  2px 2px 4px black;
+}
+
+#imgtema {
+    padding: 10px;
+}
+
+#imgtema input {
+    box-shadow:  2px 2px 4px black;
+    border: none;
+    width: 70px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.384);
+    
+}
+
+section > div#Adicionar > div {
+    margin: 10px;
+
+}
+
+input:hover {
+    cursor: pointer;
+
+}
+
