@@ -36,6 +36,20 @@ header h1 {
 
 }
 
+h2 {
+    box-shadow: 0 3px 4px var(--cor5);
+    padding: 10px;
+    text-shadow:  3px 3px 4px var(--cor5);
+    color: white;
+}
+
+#Adicionar {
+    background-color: var(--cor5);
+    padding: 5px;
+    border-radius: 50px;
+
+}
+
 section {
     margin: auto;
     max-width: 500px;
@@ -43,8 +57,9 @@ section {
 
 
 #iTema {
+    font-size: 8pt;
     border: none;
-    padding: 10px;
+    padding: 5px;
     color: white;
     border-radius: 10px;
     margin-left: 10px;
@@ -54,10 +69,12 @@ section {
 }
 
 #imgtema {
-    padding: 10px;
+    
+    padding: 5px;
 }
 
 #imgtema input {
+    font-size: 8pt;
     box-shadow:  2px 2px 4px black;
     border: none;
     width: 70px;
@@ -76,4 +93,5 @@ input:hover {
     cursor: pointer;
 
 }
+
 
