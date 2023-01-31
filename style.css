@@ -136,4 +136,9 @@ input:hover {
 
 }
 
+/*Listagem das Musicas escolhidas*/
 
+#listagem {
+    background-color: var(--cor5);
+    width: 400px;
+}

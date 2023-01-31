@@ -30,3 +30,5 @@ function paz() {
 function padrao() {
     document.body.style.backgroundImage = 'linear-gradient(to right, var(--cor4), var(--cor5)'
 }
+
+
