@@ -22,7 +22,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, var(--cor4), var(--cor5));
+    background-color: var(--cor4);
     background-attachment: fixed;
     background-size: cover;
     
