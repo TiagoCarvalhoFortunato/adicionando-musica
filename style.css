@@ -1,31 +1,39 @@
 @charset "UTF-8";
 
+                                 /*catalogo de cores*/
+
 :root {
 
     --cor1: #737272;
     --cor2: #163e7370;
     --cor3: #011526;
     --cor4: #184D59;
-    --cor5: #86A3A6;
+    --cor5: #86a3a660;
 
 }
 
 
+                               /*configuração geral*/
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Itim', cursive;
 }
 
 body {
     background-image: linear-gradient(to right, var(--cor4), var(--cor5));
     background-attachment: fixed;
     background-size: cover;
+    
 }
 
 
+                                  /*Título*/
+
 header {
     background-color: var(--cor2);
+    
 }
 
 
@@ -33,28 +41,11 @@ header h1 {
     text-align: center;
     padding: 15px;
     color: white;
+    
 
 }
 
-h2 {
-    box-shadow: 0 3px 4px var(--cor5);
-    padding: 10px;
-    text-shadow:  3px 3px 4px var(--cor5);
-    color: white;
-}
-
-#Adicionar {
-    background-color: var(--cor5);
-    padding: 5px;
-    border-radius: 50px;
-
-}
-
-section {
-    margin: auto;
-    max-width: 500px;
-}
-
+                        /*menu*/
 
 #iTema {
     font-size: 8pt;
@@ -65,7 +56,7 @@ section {
     margin-left: 10px;
     margin-bottom: 10px;
     background-color: var(--cor1);
-    box-shadow:  2px 2px 4px black;
+    box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.534);
 }
 
 #imgtema {
@@ -75,7 +66,7 @@ section {
 
 #imgtema input {
     font-size: 8pt;
-    box-shadow:  2px 2px 4px black;
+    box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.507);
     border: none;
     width: 70px;
     padding: 3px;
@@ -84,10 +75,61 @@ section {
     
 }
 
-section > div#Adicionar > div {
-    margin: 10px;
+
+
+                                /*Subtítulo */
+
+h2 {
+    box-shadow: 0 3px 4px var(--cor5);
+    padding: 10px;
+    text-shadow:  3px 3px 4px var(--cor4);
+    color: white;
+}
+
+
+
+#Adicionar {
+    background-color: var(--cor5);
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+    border-radius: 50%;
 
 }
+
+#Adicionar input {
+    margin: 5px;
+}
+
+section {
+    margin: auto;
+    max-width: 500px;
+}
+
+
+
+
+
+#ienviar {
+    width: 80px;
+    height: 40px;
+    background-color: var(--cor2);
+    border: none;
+
+}
+
+#ienviar:hover {
+    background-color: var(--cor1);
+    color: white;
+}
+
+
+#Adicionar input:focus {
+    outline: none;
+    
+}
+
+
 
 input:hover {
     cursor: pointer;

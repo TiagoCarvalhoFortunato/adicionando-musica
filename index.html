@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <title>PlayList</title>
 </head>
 <body id="fundo">
@@ -14,11 +17,13 @@
         </h1>
         <menu>
             <input type="button" value="TEMA"  id="iTema" onclick="tema()">
+            <!---BOTOES DO TEMA DE FUNDO--->
             <div id="imgtema">
                 <input type="button" value="Aquário" onclick="aquario()"> 
                 <input type="button" value="Paz" onclick="paz()">
                 <input type="button" value="Padrão" onclick="padrao()">
             </div>
+
         </menu>
     </header>
     <section>
@@ -26,16 +31,22 @@
             Qual música gostaria de ver nossa banda tocando ?
         </h2>
         <div id="Adicionar">
-            <div>
+            <!---nome da banda ou cantor--->
+            <div>                    
                 <label for="icantor">Cantor:</label>
                 <input type="text" name="cantor" id="icantor" placeholder="Cantor/Banda"> <br>
-            </div>
-            <div>
+            
+            <!---nome da musica--->
+            
                 <label for="imusica">Música:</label>
-                <input type="text" name="musica" id="imusica" placeholder="Nome da Música">
+                <input type="text" name="musica" id="imusica" placeholder="Nome da Música"> <br>
+           
+            <!---botao de enviar--->
+           
+                <input type="button" value="Enviar" id="ienviar">
             </div>
-          
         </div>
+        
     </section>
     
     <script src="style.js"></script>
