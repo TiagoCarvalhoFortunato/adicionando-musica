@@ -143,8 +143,7 @@ input:hover {
     width: 400px;
     display: flex;
     flex-flow: row wrap;
-    margin: 15px 15px 15px 50px;
-    text-align: center;
+    margin: auto;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     
