@@ -7,13 +7,23 @@ function ClickEnvia() {
     let Musica = String(clickMusica.value)
     let Cantor = String(clickCantor.value)
     if (Cantor.length > 0 && Musica.length > 0) {
-    
-    Listagem.innerHTML = `-Cantor: ${Cantor} ......Música:- ${Musica}`
+        let novoItem = `<div class="icone">
+        *
+    </div>
+    <div class="musica_cantor">
+        banda Lort
+    </div>
+    <div class="excluir">
+        <input type="button" value="Excluir">
+    </div>`
+
+        Listagem.innerHTML += novoItem
+    }
     
 
-    } else {
-        alert(' Por favor preencha os campos')
-    }
+    clickCantor.value = '';
+    clickMusica.value = '';
+    clickCantor.focus();
 }
 
 
