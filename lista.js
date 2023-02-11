@@ -2,22 +2,32 @@ let clickCantor = document.getElementById('icantor')
 let clickMusica = document.getElementById('imusica')
 let Listagem = document.getElementById('listagem')
 
+let contador = 0
 
 function ClickEnvia() {
     let Musica = String(clickMusica.value)
     let Cantor = String(clickCantor.value)
     if (Cantor.length > 0 && Musica.length > 0) {
-        let novoItem = `<div class="icone">
+        //toda vez que adiciona um elemento o contador vai subi 1
+        ++contador;
+
+        let novoItem = `<div id="${contador}" class="icone" >
         *
     </div>
     <div class="musica_cantor">
-        banda Lort
+        ${Cantor} - ${Musica}
     </div>
-    <div class="excluir">
-        <input type="button" value="Excluir">
+    <div class="excluir" >
+        <button onclick="deletar(${contador})" class="deletar"> deletar</button>
     </div>`
 
         Listagem.innerHTML += novoItem
+    }
+
+    function deletar(id) {
+        var eliminar = document.getElementById(id);
+        eliminar.remove();
+        
     }
     
 
