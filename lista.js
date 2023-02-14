@@ -4,6 +4,8 @@ let Listagem = document.getElementById('listagem')
 
 let contador = 0
 
+
+
 function ClickEnvia() {
     let Musica = String(clickMusica.value)
     let Cantor = String(clickCantor.value)
@@ -22,13 +24,20 @@ function ClickEnvia() {
     </div>`
 
         Listagem.innerHTML += novoItem
+    } else {
+        function alerta() {
+            alert("Por Favor , preencha os campos ! ");
+        }
+        alerta()
     }
 
     function deletar(id) {
         var eliminar = document.getElementById(id);
         eliminar.remove();
-        
+       
     }
+    deletar(contador)
+    
     
 
     clickCantor.value = '';
