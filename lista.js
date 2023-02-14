@@ -13,37 +13,44 @@ function ClickEnvia() {
         //toda vez que adiciona um elemento o contador vai subi 1
         ++contador;
 
-        let novoItem = `<div id="${contador}" class="icone" >
-        *
-    </div>
-    <div class="musica_cantor">
-        ${Cantor} - ${Musica}
-    </div>
-    <div class="excluir" >
-        <button onclick="deletar(${contador})" class="deletar"> deletar</button>
-    </div>`
+        let novoItem = `<div class="item" id"${contador}"> 
+        <div class="icone" >
+            *
+        </div>
+        <div class="musica_cantor">
+            ${Cantor} - ${Musica}
+        </div>
+        <div class="excluir" >
+            <button onclick="deletar(${contador})" class="delete"> Excluir</button>
+        </div>
 
+        </div>   `
+   
         Listagem.innerHTML += novoItem
     } else {
         function alerta() {
             alert("Por Favor , preencha os campos ! ");
         }
-        alerta()
-    }
 
-    function deletar(id) {
-        var eliminar = document.getElementById(id);
-        eliminar.remove();
-       
-    }
-    deletar(contador)
-    
-    
+        alerta()
+    };
+
 
     clickCantor.value = '';
     clickMusica.value = '';
     clickCantor.focus();
+
+ 
 }
+
+function deletar(id) {
+    var listplay = document.getElementById(id);
+    listplay.remove();
+}
+
+
+
+
 
 
 

@@ -139,13 +139,17 @@ input:hover {
 /*Listagem das Musicas escolhidas*/
 
 #listagem {
-    background-color: var(--cor5);
     width: 400px;
+    margin: auto;
+}
+
+#listagem > div{
+    background-color: var(--cor5); 
     display: flex;
     flex-flow: row wrap;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    margin: auto;
+   margin-bottom: 2%;
     
 
 }
@@ -163,7 +167,6 @@ input:hover {
     width: 70%;
     height: 25px;
     text-align: center;
-    margin: auto;
     padding-top: 3px;
 }
 
@@ -175,7 +178,7 @@ input:hover {
     
 }
 
-.excluir .deletar {
+.excluir .delete {
     width: 100%;
     height: 28px;
     border-radius: 10px;
