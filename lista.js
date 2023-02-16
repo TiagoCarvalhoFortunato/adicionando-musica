@@ -15,13 +15,26 @@ function ClickEnvia() {
 
         let novoItem = `<div class="item" id="${contador}"> 
         <div class="icone" >
-            *
+
+            <span class="material-symbols-outlined">
+            radio_button_unchecked
+            </span>
+
         </div>
         <div class="musica_cantor">
             ${Cantor} - ${Musica}
         </div>
         <div class="excluir" >
-            <button onclick="deletar(${contador})" class="delete"> Excluir</button>
+        
+            <button onclick="deletar(${contador})" class="delete" >
+
+            <span class="material-symbols-outlined" id="Itrash">
+                delete_forever 
+            </span>
+
+            Excluir
+            
+            </button>
         </div>
 
         </div>   `

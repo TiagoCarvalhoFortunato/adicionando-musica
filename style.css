@@ -5,10 +5,10 @@
 :root {
 
     --cor1: #737272;
-    --cor2: #163e7370;
+    --cor2: #163e7375;
     --cor3: #011526;
     --cor4: #184D59;
-    --cor5: #86a3a660;
+    --cor5: #86a3a6bb;
 
 }
 
@@ -72,7 +72,7 @@ header h1 {
     width: 70px;
     padding: 3px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(255, 255, 255, 0.489);
     
 }
 
@@ -149,7 +149,7 @@ input:hover {
     flex-flow: row wrap;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-   margin-bottom: 2%;
+    margin-bottom: 2%;
     
 
 }
@@ -175,7 +175,7 @@ input:hover {
     height: 25px;  
     border-radius: 20px;
     
-    
+     
 }
 
 .excluir .delete {
@@ -184,4 +184,10 @@ input:hover {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+   
+
+}
+
+#Itrash {
+    margin-top: 2px;
 }
