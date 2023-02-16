@@ -13,7 +13,7 @@ function ClickEnvia() {
         //toda vez que adiciona um elemento o contador vai subi 1
         ++contador;
 
-        let novoItem = `<div class="item" id"${contador}"> 
+        let novoItem = `<div class="item" id="${contador}"> 
         <div class="icone" >
             *
         </div>
@@ -44,8 +44,8 @@ function ClickEnvia() {
 }
 
 function deletar(id) {
-    var listplay = document.getElementById(id);
-    listplay.remove();
+    let removendo = document.getElementById(id);
+    removendo.remove()
 }
 
 
