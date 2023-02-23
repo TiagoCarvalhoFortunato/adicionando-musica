@@ -28,11 +28,8 @@ function ClickEnvia() {
         
             <button onclick="deletar(${contador})" class="delete" >
 
-            <span class="material-symbols-outlined" id="Itrash">
-                delete_forever 
-            </span>
-
-            Excluir
+                     
+                Excluir
             
             </button>
         </div>
@@ -60,7 +57,6 @@ function deletar(id) {
     let removendo = document.getElementById(id);
     removendo.remove()
 }
-
 
 
 
